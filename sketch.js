@@ -190,6 +190,7 @@ function mouseReleased(){
 function keyPressed(){
 
   if(keyCode===32){
+    Matter.Body.setPosition(this.polygon,{x:150,y: 200})
     slingShot.attach(this.polygon);
   }
 }
